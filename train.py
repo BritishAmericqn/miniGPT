@@ -230,6 +230,8 @@ class MicroGPT(nn.Module):
             # focus only on the final time step
             logits = logits[:, -1, :]  # [B, vocab_size]
 
+            temperature = 0.4
+            logits = logits / temperature
             probs = F.softmax(logits, dim=-1)
 
             # sample from probability distribution
