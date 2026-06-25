@@ -1,0 +1,7 @@
+[invoke]
+entry_point = ".venv/bin/python train.py"
+working_dir  = "."
+
+[contract]
+input_file  = "bench_input.json"
+output_file = "bench_output.json"

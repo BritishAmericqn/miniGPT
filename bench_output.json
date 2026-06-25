@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0",
+  "run_id": "84be5d16-ab0e-4b98-b368-67e41ae791e3",
+  "status": "complete",
+  "architecture": {
+    "name": "microgpt",
+    "total_params": 817444,
+    "tokenizer": {
+      "name": "char",
+      "vocab_size": 36
+    },
+    "layers": [
+      {
+        "type": "embedding"
+      },
+      {
+        "type": "transformer_block"
+      },
+      {
+        "type": "transformer_block"
+      },
+      {
+        "type": "transformer_block"
+      },
+      {
+        "type": "transformer_block"
+      },
+      {
+        "type": "lm_head"
+      }
+    ],
+    "n_layers": 4,
+    "d_model": 128
+  },
+  "training": {
+    "steps": [
+      {
+        "step": 1,
+        "train_loss": 3.750505208969116,
+        "grad_norm": 1.1319843435011359,
+        "lr": 0.001,
+        "val_loss": 3.739682197570801
+      },
+      {
+        "step": 2,
+        "train_loss": 3.3733553886413574,
+        "grad_norm": 0.9858440666056218,
+        "lr": 0.001
+      },
+      {
+        "step": 3,
+        "train_loss": 3.1107325553894043,
+        "grad_norm": 0.8145789563362682,
+        "lr": 0.001
+      },
+      {
+        "step": 4,
+        "train_loss": 2.9645447731018066,
+        "grad_norm": 0.6809777497617844,
+        "lr": 0.001
+      },
+      {
+        "step": 5,
+        "train_loss": 2.828287124633789,
+        "grad_norm": 0.68104316353455,
+        "lr": 0.001
+      },
+      {
+        "step": 6,
+        "train_loss": 2.7693469524383545,
+        "grad_norm": 0.48694129371060085,
+        "lr": 0.001
+      },
+      {
+        "step": 7,
+        "train_loss": 2.6953742504119873,
+        "grad_norm": 0.4988761009478424,
+        "lr": 0.001
+      },
+      {
+        "step": 8,
+        "train_loss": 2.6396143436431885,
+        "grad_norm": 0.5438119717104778,
+        "lr": 0.001
+      },
+      {
+        "step": 9,
+        "train_loss": 2.596595525741577,
+        "grad_norm": 0.5116712084552503,
+        "lr": 0.001
+      },
+      {
+        "step": 10,
+        "train_loss": 2.529802083969116,
+        "grad_norm": 0.45043927624130736,
+        "lr": 0.001
+      },
+      {
+        "step": 11,
+        "train_loss": 2.5154988765716553,
+        "grad_norm": 0.39228640555492184,
+        "lr": 0.001
+      },
+      {
+        "step": 12,
+        "train_loss": 2.450883150100708,
+        "grad_norm": 0.3718311199081214,
+        "lr": 0.001
+      },
+      {
+        "step": 13,
+        "train_loss": 2.394382953643799,
+        "grad_norm": 0.36036993669440415,
+        "lr": 0.001
+      },
+      {
+        "step": 14,
+        "train_loss": 2.3636314868927,
+        "grad_norm": 0.367121860767208,
+        "lr": 0.001
+      },
+      {
+        "step": 15,
+        "train_loss": 2.3292951583862305,
+        "grad_norm": 0.34761648103055,
+        "lr": 0.001
+      },
+      {
+        "step": 16,
+        "train_loss": 2.312593460083008,
+        "grad_norm": 0.2977906033596571,
+        "lr": 0.001
+      },
+      {
+        "step": 17,
+        "train_loss": 2.28188419342041,
+        "grad_norm": 0.34258206158165416,
+        "lr": 0.001
+      },
+      {
+        "step": 18,
+        "train_loss": 2.248832941055298,
+        "grad_norm": 0.3283177629839907,
+        "lr": 0.001
+      },
+      {
+        "step": 19,
+        "train_loss": 2.234898805618286,
+        "grad_norm": 0.30793506040630364,
+        "lr": 0.001
+      },
+      {
+        "step": 20,
+        "train_loss": 2.2171640396118164,
+        "grad_norm": 0.2941599758531556,
+        "lr": 0.001,
+        "val_loss": 2.778287887573242
+      }
+    ],
+    "tokens_seen": 81920,
+    "wall_clock_sec": 22.39363941596821
+  },
+  "inference": {
+    "eval_logprobs_path": "eval_logprobs.jsonl",
+    "generations": [
+      {
+        "prompt": "Once upon a time there was a little",
+        "sample_index": 0,
+        "output": " thed brest he t t withe bilounthe the st te t t a ailounnd ant.\n t founnn foughest cannd wany bre b",
+        "prompt_tokens": 35,
+        "tokens_generated": 100
+      },
+      {
+        "prompt": "Once there was a small dog who",
+        "sample_index": 0,
+        "output": " t ted fowinnd and a buny hesann stounthely t ain bun fouthesthe t Lithe t any a be t sthey browily ",
+        "prompt_tokens": 30,
+        "tokens_generated": 100
+      },
+      {
+        "prompt": "One sunny morning a girl named",
+        "sample_index": 0,
+        "output": " t bughed Lily buthe cy found ca the be br bro the bun brow bed t the brouny t bund t bughe be are b",
+        "prompt_tokens": 30,
+        "tokens_generated": 100
+      }
+    ],
+    "timing": {
+      "prefill_sec": 0.006210290943272412,
+      "prefill_tokens": 95,
+      "decode_sec": 0.7632966249948367,
+      "tokens_generated": 300
+    }
+  }
+}
